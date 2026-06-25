@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-white font-body;
+    background-color: #0f0520;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+    letter-spacing: 0.08em;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #fde68a 0%, #d4af37 50%, #b8860b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-violet {
+    background: linear-gradient(135deg, #c4b5fd 0%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-gradient-gold {
+    border-image: linear-gradient(135deg, #fde68a, #d4af37, #b8860b) 1;
+  }
+
+  .gold-line {
+    background: linear-gradient(90deg, transparent, #d4af37, transparent);
+    height: 1px;
+  }
+
+  .gold-line-left {
+    background: linear-gradient(90deg, #d4af37, transparent);
+    height: 1px;
+  }
+
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(212, 175, 55, 0.25);
+  }
+
+  .nav-link {
+    @apply relative font-heading text-sm tracking-widest transition-colors duration-200;
+    color: #fde68a;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 w-0 h-px transition-all duration-300;
+    background-color: #d4af37;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply w-full;
+  }
+
+  .nav-link:hover {
+    color: #d4af37;
+  }
+
+  .section-heading {
+    @apply text-3xl md:text-4xl font-heading uppercase tracking-widest text-center;
+  }
+
+  .btn-gold {
+    @apply inline-block px-8 py-3 font-heading text-sm tracking-widest uppercase transition-all duration-300;
+    color: #1a0a3c;
+    background-color: #d4af37;
+    border: 1px solid #d4af37;
+  }
+
+  .btn-gold:hover {
+    background-color: #fde68a;
+    color: #1a0a3c;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+  }
+
+  .btn-outline-gold {
+    @apply inline-block px-8 py-3 font-heading text-sm tracking-widest uppercase transition-all duration-300;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    background-color: transparent;
+  }
+
+  .btn-outline-gold:hover {
+    background-color: #d4af37;
+    color: #1a0a3c;
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+  }
+}
