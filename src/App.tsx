@@ -7,7 +7,7 @@ const NAV_LINKS = [
   { label: 'Brands', href: '#brands' },
   { label: 'Mobile Apps', href: '#apps' },
   { label: 'Contact', href: '#contact' },
-  { label: 'Privacy Policy', href: '/privacy-policy.html' },
+  { label: 'Privacy Policy', href: '#privacy' },
 ];
 
 const BRANDS = [
@@ -367,6 +367,197 @@ function ContactSection() {
   );
 }
 
+function PrivacyPolicySection() {
+  return (
+    <section id="privacy" className="py-28 px-6 relative overflow-hidden bg-violet-950/30">
+      <div className="absolute top-0 left-0 right-0 gold-line opacity-30" />
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-20 right-0 w-72 h-72 rounded-full bg-violet-700/10 blur-3xl" />
+        <div className="absolute bottom-20 left-0 w-64 h-64 rounded-full bg-gold-DEFAULT/5 blur-3xl" />
+      </div>
+
+      <div className="max-w-3xl mx-auto relative z-10">
+        <div className="text-center mb-16">
+          <span className="font-heading text-xs tracking-[0.4em] text-gold-DEFAULT uppercase block mb-4">Legal</span>
+          <h2 className="section-heading text-gradient-gold mb-4">Privacy Policy</h2>
+          <p className="font-body text-violet-400 text-sm mb-6">Last updated: June 27, 2026</p>
+          <div className="gold-line max-w-24 mx-auto" />
+        </div>
+
+        <div className="space-y-10 font-body text-violet-200 leading-relaxed">
+          <p>
+            This Privacy Policy applies to all mobile and web applications published by{' '}
+            <strong className="text-white">Joycyi LLC</strong> ("we," "us," or "our"),
+            including all apps available on the Google Play Store and Apple App Store.
+            This single policy is referenced from each individual app's store listing.
+          </p>
+          <p>
+            By using any app or website published by Joycyi LLC, you agree to the
+            collection and use of information in accordance with this policy.
+          </p>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              1. Information We Collect
+            </h3>
+            <p className="mb-3">Depending on the specific app, we may collect the following types of information:</p>
+            <p className="text-white font-semibold mb-1">Account Information</p>
+            <ul className="list-disc pl-6 space-y-1 mb-4 text-violet-300">
+              <li>Email address (if you create an account or sign in)</li>
+              <li>Name or display name (if provided)</li>
+              <li>Password (stored securely and encrypted — we never see your plain-text password)</li>
+            </ul>
+            <p className="text-white font-semibold mb-1">Advertising &amp; Analytics Data</p>
+            <ul className="list-disc pl-6 space-y-1 mb-4 text-violet-300">
+              <li>Device identifiers (such as Android Advertising ID)</li>
+              <li>Approximate location (derived from IP address, for ad targeting purposes)</li>
+              <li>App usage data (screens viewed, interactions, crash reports)</li>
+              <li>Ad interaction data (impressions, clicks) via our advertising partners</li>
+            </ul>
+            <p className="text-white font-semibold mb-1">Automatically Collected Data</p>
+            <ul className="list-disc pl-6 space-y-1 text-violet-300">
+              <li>Device type, operating system, and app version</li>
+              <li>General usage statistics used to improve app performance</li>
+            </ul>
+          </div>
+
+          <p>
+            Some of our apps are purely informational and do not require an account or
+            collect personal data beyond what is described under Advertising &amp;
+            Analytics above (if ads are present in that particular app).
+          </p>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              2. How We Use Your Information
+            </h3>
+            <ul className="list-disc pl-6 space-y-1 text-violet-300">
+              <li>To provide and maintain the app's core functionality</li>
+              <li>To create and manage your account, if applicable</li>
+              <li>To display relevant advertisements through third-party ad networks</li>
+              <li>To understand how the app is used so we can fix bugs and improve features</li>
+              <li>To communicate with you regarding your account or support requests</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              3. Third-Party Services
+            </h3>
+            <p className="mb-3">
+              Our apps may use third-party services that collect information used to
+              identify you, as governed by their own privacy policies. These may include:
+            </p>
+            <ul className="list-disc pl-6 space-y-1 text-violet-300 mb-3">
+              <li>
+                <strong className="text-white">Google AdMob</strong> — for displaying advertisements (
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-gold-DEFAULT hover:text-gold-light">
+                  Google Privacy Policy
+                </a>)
+              </li>
+              <li><strong className="text-white">Google Play Services</strong> — for app distribution and core device functionality</li>
+              <li>Other analytics or authentication providers, as disclosed within each app's Data Safety section on its Play Store listing</li>
+            </ul>
+            <p>
+              We do not sell your personal data to third parties. Any data shared with
+              the providers above is used solely to operate and improve the app, or to
+              display advertising.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              4. Data Storage &amp; Security
+            </h3>
+            <p>
+              We take reasonable measures to protect your information from unauthorized
+              access, alteration, or disclosure. Account data, where applicable, is
+              stored using industry-standard encrypted services. No method of
+              transmission over the internet is 100% secure, and we cannot guarantee
+              absolute security.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              5. Data Retention &amp; Deletion
+            </h3>
+            <p>
+              We retain account information for as long as your account remains active.
+              You may request deletion of your account and associated personal data at
+              any time by contacting us using the details below. We will respond to
+              deletion requests within a reasonable timeframe, except where retention
+              is required by law.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              6. Children's Privacy
+            </h3>
+            <p>
+              Our apps are not directed at children under the age of 13 (or the
+              applicable age in your jurisdiction), and we do not knowingly collect
+              personal information from children. If you believe a child has provided
+              us with personal information, please contact us so we can remove it.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              7. Your Rights
+            </h3>
+            <p>
+              Depending on your location, you may have rights to access, correct, or
+              delete your personal data, or to object to certain processing. To
+              exercise any of these rights, contact us using the details below.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              8. Changes to This Policy
+            </h3>
+            <p>
+              We may update this Privacy Policy from time to time. Changes will be
+              posted on this page with an updated "Last updated" date. Continued use
+              of any app after changes are posted constitutes acceptance of the
+              revised policy.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              9. Contact Us
+            </h3>
+            <div className="bg-violet-900/30 border border-gold-DEFAULT/20 rounded-xl p-6">
+              <p className="mb-3">If you have any questions about this Privacy Policy, please contact us:</p>
+              <p>
+                <strong className="text-white">Developer:</strong> Joycyi LLC<br />
+                <strong className="text-white">Email:</strong>{' '}
+                <a href="mailto:support@joycyi.com" className="text-gold-DEFAULT hover:text-gold-light">
+                  support@joycyi.com
+                </a><br />
+                <strong className="text-white">Website:</strong>{' '}
+                <a href="https://joycyi.com" className="text-gold-DEFAULT hover:text-gold-light">
+                  joycyi.com
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <p className="text-sm text-violet-400 pt-4 border-t border-gold-DEFAULT/10">
+            This privacy policy applies to all current and future applications published
+            under the Joycyi LLC developer account, including Wedding Guide and Tips,
+            Travel Knowledge: ASEAN &amp; East Asia, Food Recipe Philippines Encyclopedia,
+            and Travel Philippines Encyclopedia.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Footer() {
   return (
     <footer className="bg-[#0d0520] border-t border-gold-DEFAULT/20 pt-16 pb-8 px-6 relative overflow-hidden">
@@ -458,6 +649,7 @@ export default function App() {
         <BrandsSection />
         <AppsSection />
         <ContactSection />
+        <PrivacyPolicySection />
       </main>
       <Footer />
     </div>
