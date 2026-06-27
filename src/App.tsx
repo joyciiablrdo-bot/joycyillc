@@ -7,6 +7,7 @@ const NAV_LINKS = [
   { label: 'Brands', href: '#brands' },
   { label: 'Mobile Apps', href: '#apps' },
   { label: 'Contact', href: '#contact' },
+  { label: 'Privacy Policy', href: '/privacy-policy.html' },
 ];
 
 const BRANDS = [
