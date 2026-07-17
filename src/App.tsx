@@ -612,7 +612,7 @@ function TermsOfUseSection() {
             <p>
               Joycyi LLC develops digital brands, websites, and educational mobile
               applications designed to provide useful knowledge and services to users
-              worldwide, including brands such as Jixxii and Photobooth Kawaii.
+              worldwide, including brands such as Photobooth Kawaii.
             </p>
           </div>
 
