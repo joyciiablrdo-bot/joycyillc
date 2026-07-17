@@ -13,6 +13,12 @@ const NAV_LINKS = [
 
 const BRANDS = [
   {
+    name: 'Jixxii',
+    url: 'https://www.jixxii.com',
+    display: 'www.jixxii.com',
+    description: 'A digital platform delivering premium content and services to users worldwide through an elegant online experience.',
+  },
+  {
     name: 'Photobooth Kawaii',
     url: 'https://photobooth-kawaii.online',
     display: 'photobooth-kawaii.online',
@@ -180,7 +186,7 @@ function AboutSection() {
 
             <div className="grid grid-cols-3 gap-6 pt-4">
               {[
-                { number: '1+', label: 'Digital Brands' },
+                { number: '2+', label: 'Digital Brands' },
                 { number: '4+', label: 'Mobile Apps' },
                 { number: '∞', label: 'Global Reach' },
               ].map((stat) => (
@@ -612,7 +618,7 @@ function TermsOfUseSection() {
             <p>
               Joycyi LLC develops digital brands, websites, and educational mobile
               applications designed to provide useful knowledge and services to users
-              worldwide, including brands such as Photobooth Kawaii.
+              worldwide, including brands such as Jixxii and Photobooth Kawaii.
             </p>
           </div>
 
@@ -869,10 +875,10 @@ export default function App() {
     <div className="min-h-screen bg-violet-dark">
       <Header scrolled={scrolled} mobileOpen={mobileOpen} setMobileOpen={setMobileOpen} />
       <main>
+        <AppsSection />
         <HeroSection />
         <AboutSection />
         <BrandsSection />
-        <AppsSection />
         <ContactSection />
         <PrivacyPolicySection />
         <TermsOfUseSection />
