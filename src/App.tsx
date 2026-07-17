@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { label: 'Mobile Apps', href: '#apps' },
   { label: 'Contact', href: '#contact' },
   { label: 'Privacy Policy', href: '#privacy' },
+  { label: 'Terms of Use', href: '#terms' },
 ];
 
 const BRANDS = [
@@ -558,6 +559,211 @@ function PrivacyPolicySection() {
   );
 }
 
+function TermsOfUseSection() {
+  return (
+    <section id="terms" className="py-28 px-6 relative overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 gold-line opacity-30" />
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-20 left-10 w-72 h-72 rounded-full bg-violet-600/10 blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-64 h-64 rounded-full bg-gold-DEFAULT/5 blur-3xl" />
+      </div>
+
+      <div className="max-w-3xl mx-auto relative z-10">
+        <div className="text-center mb-16">
+          <span className="font-heading text-xs tracking-[0.4em] text-gold-DEFAULT uppercase block mb-4">Legal</span>
+          <h2 className="section-heading text-gradient-gold mb-4">Terms of Use</h2>
+          <p className="font-body text-violet-400 text-sm mb-6">Effective Date: July 18, 2026</p>
+          <div className="gold-line max-w-24 mx-auto" />
+        </div>
+
+        <div className="space-y-10 font-body text-violet-200 leading-relaxed">
+          <p>
+            Welcome to <strong className="text-white">Joycyi LLC</strong> ("Joycyi,"
+            "we," "us," or "our"). These Terms of Use ("Terms") govern your access to
+            and use of the website located at joycyi.com, along with any related
+            websites, applications, and services (collectively, the "Services"). By
+            accessing or using our Services, you agree to be bound by these Terms. If
+            you do not agree, please do not use our Services.
+          </p>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              1. About Joycyi LLC
+            </h3>
+            <p>
+              Joycyi LLC develops digital brands, websites, and educational mobile
+              applications designed to provide useful knowledge and services to users
+              worldwide, including brands such as Jixxii and Photobooth Kawaii.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              2. Eligibility
+            </h3>
+            <p>
+              You must be at least 13 years old to use our Services. If you are under
+              18, you may only use our Services with the involvement and consent of a
+              parent or legal guardian.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              3. Use of Our Services
+            </h3>
+            <p className="mb-3">You agree not to:</p>
+            <ul className="list-disc pl-6 space-y-1 text-violet-300">
+              <li>Violate any applicable local, national, or international law or regulation</li>
+              <li>Attempt unauthorized access to any part of the Services</li>
+              <li>Interfere with or disrupt the Services or connected networks</li>
+              <li>Upload or transmit viruses, malware, or malicious code</li>
+              <li>Use bots or scrapers without our prior written permission</li>
+              <li>Impersonate any person or entity</li>
+              <li>Harass, abuse, or harm another person through the Services</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              4. Intellectual Property
+            </h3>
+            <p>
+              All content on the Services, including text, graphics, logos, images,
+              and software, is the property of Joycyi LLC or its licensors and is
+              protected by copyright, trademark, and other intellectual property laws.
+              You may not reproduce, distribute, or create derivative works from any
+              content without our prior written consent, except for personal,
+              non-commercial use.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              5. Mobile Applications
+            </h3>
+            <p>
+              If you download or use any Joycyi LLC mobile applications, your use is
+              also subject to the terms of the applicable app store (Apple App Store
+              or Google Play Store) as well as any additional terms provided within
+              the application itself.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              6. Third-Party Links and Advertising
+            </h3>
+            <p>
+              Our Services may contain links to third-party websites or services not
+              owned or controlled by Joycyi LLC. We are not responsible for the
+              content, privacy policies, or practices of any third-party sites. Our
+              website may also display advertisements served by third parties (such as
+              Google AdSense), which may use cookies or similar technologies. Please
+              review our Privacy Policy for more information.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              7. Disclaimer of Warranties
+            </h3>
+            <p>
+              The Services are provided on an "as is" and "as available" basis without
+              warranties of any kind, either express or implied, including implied
+              warranties of merchantability, fitness for a particular purpose, or
+              non-infringement. We do not warrant that the Services will be
+              uninterrupted, error-free, or free of harmful components.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              8. Limitation of Liability
+            </h3>
+            <p>
+              To the fullest extent permitted by law, Joycyi LLC shall not be liable
+              for any indirect, incidental, special, consequential, or punitive
+              damages, or any loss of profits or revenues, arising out of or related to
+              your use of, or inability to use, the Services.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              9. Indemnification
+            </h3>
+            <p>
+              You agree to indemnify and hold harmless Joycyi LLC, its officers,
+              employees, and affiliates from any claims, damages, losses, liabilities,
+              and expenses (including legal fees) arising out of your use of the
+              Services or violation of these Terms.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              10. Termination
+            </h3>
+            <p>
+              We reserve the right to suspend or terminate your access to the Services
+              at any time, without notice, for conduct that we believe violates these
+              Terms or is otherwise harmful to other users, us, or third parties.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              11. Changes to These Terms
+            </h3>
+            <p>
+              We may update these Terms from time to time. Any changes will be posted
+              on this page with a revised effective date. Your continued use of the
+              Services after changes are posted constitutes your acceptance of the
+              updated Terms.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              12. Governing Law
+            </h3>
+            <p>
+              These Terms shall be governed by and construed in accordance with the
+              laws of the jurisdiction in which Joycyi LLC operates, without regard to
+              its conflict of law provisions.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-base tracking-widest text-gold-light uppercase mb-4 border-b border-gold-DEFAULT/20 pb-2">
+              13. Contact Us
+            </h3>
+            <div className="bg-violet-900/30 border border-gold-DEFAULT/20 rounded-xl p-6">
+              <p className="mb-3">If you have any questions about these Terms, please contact us:</p>
+              <p>
+                <strong className="text-white">Joycyi LLC</strong><br />
+                <strong className="text-white">Email:</strong>{' '}
+                <a href="mailto:support@joycyi.com" className="text-gold-DEFAULT hover:text-gold-light">
+                  support@joycyi.com
+                </a><br />
+                <strong className="text-white">Website:</strong>{' '}
+                <a href="https://joycyi.com" className="text-gold-DEFAULT hover:text-gold-light">
+                  joycyi.com
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <p className="text-sm text-violet-400 pt-4 border-t border-gold-DEFAULT/10 italic">
+            This document is a general template and does not constitute legal advice.
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Footer() {
   return (
     <footer className="bg-[#0d0520] border-t border-gold-DEFAULT/20 pt-16 pb-8 px-6 relative overflow-hidden">
@@ -650,6 +856,7 @@ export default function App() {
         <AppsSection />
         <ContactSection />
         <PrivacyPolicySection />
+        <TermsOfUseSection />
       </main>
       <Footer />
     </div>
