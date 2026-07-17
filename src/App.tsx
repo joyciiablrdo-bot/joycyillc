@@ -30,6 +30,8 @@ const APPS = [
   {
     name: 'Wedding Guide and Tips',
     description: 'A comprehensive guide for planning your perfect wedding with expert tips and checklists.',
+    image: '/images/IMG_6083.jpeg',
+    url: 'https://play.google.com/store/apps/details?id=com.joyweddingguidetips.app',
   },
   {
     name: 'Travel Knowledge: ASEAN & East Asia App',
@@ -38,6 +40,8 @@ const APPS = [
   {
     name: 'Food Recipe Philippines Encyclopedia',
     description: 'Discover authentic Filipino recipes, cooking techniques, and culinary traditions in one place.',
+    image: '/images/cc.jpg',
+    url: 'https://play.google.com/store/apps/details?id=com.filipinofood.encyclopedia',
   },
   {
     name: 'Travel Philippines Encyclopedia',
@@ -302,22 +306,43 @@ function AppsSection() {
           {APPS.map((app, i) => (
             <div
               key={app.name}
-              className="card-hover group relative bg-gradient-to-br from-violet-900/50 to-violet-950/50 border border-gold-DEFAULT/20 rounded-2xl p-7 backdrop-blur-sm overflow-hidden"
+              className="card-hover group relative bg-gradient-to-br from-violet-900/50 to-violet-950/50 border border-gold-DEFAULT/20 rounded-2xl backdrop-blur-sm overflow-hidden"
             >
-              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-DEFAULT/50 to-transparent" />
-              <div className="absolute inset-0 bg-gradient-to-br from-gold-DEFAULT/0 to-gold-DEFAULT/0 group-hover:from-gold-DEFAULT/5 group-hover:to-transparent transition-all duration-500" />
+              <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-DEFAULT/50 to-transparent z-10" />
+              <div className="absolute inset-0 bg-gradient-to-br from-gold-DEFAULT/0 to-gold-DEFAULT/0 group-hover:from-gold-DEFAULT/5 group-hover:to-transparent transition-all duration-500 z-10 pointer-events-none" />
 
-              <div className="relative z-10 flex gap-5 items-start">
+              {app.image && (
+                <div className="w-full h-44 overflow-hidden">
+                  <img
+                    src={app.image}
+                    alt={app.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              )}
+
+              <div className="relative z-10 p-7 flex gap-5 items-start">
                 <div className="w-12 h-12 flex-shrink-0 rounded-xl bg-gradient-to-br from-gold-DEFAULT/20 to-gold-DEFAULT/5 border border-gold-DEFAULT/30 flex items-center justify-center font-heading text-gold-DEFAULT text-lg font-bold">
                   {i + 1}
                 </div>
                 <div>
                   <h3 className="font-heading text-base tracking-widest text-white mb-2 uppercase leading-snug">{app.name}</h3>
                   <p className="font-body text-violet-300 text-sm leading-relaxed mb-4">{app.description}</p>
-                  <span className="inline-flex items-center gap-2 font-body text-xs text-gold-DEFAULT/80 bg-gold-DEFAULT/10 border border-gold-DEFAULT/20 px-3 py-1 rounded-full">
+                  <span className="inline-flex items-center gap-2 font-body text-xs text-gold-DEFAULT/80 bg-gold-DEFAULT/10 border border-gold-DEFAULT/20 px-3 py-1 rounded-full mb-4">
                     <Smartphone size={12} />
                     Available on iOS & Android
                   </span>
+                  {app.url && (
+                    <a
+                      href={app.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 font-heading text-xs tracking-widest text-gold-DEFAULT hover:text-gold-light transition-colors uppercase"
+                    >
+                      Get it on Google Play
+                      <ExternalLink size={14} />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
