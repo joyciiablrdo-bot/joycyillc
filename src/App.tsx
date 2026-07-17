@@ -180,7 +180,7 @@ function AboutSection() {
 
             <div className="grid grid-cols-3 gap-6 pt-4">
               {[
-                { number: '2+', label: 'Digital Brands' },
+                { number: '1+', label: 'Digital Brands' },
                 { number: '4+', label: 'Mobile Apps' },
                 { number: '∞', label: 'Global Reach' },
               ].map((stat) => (
