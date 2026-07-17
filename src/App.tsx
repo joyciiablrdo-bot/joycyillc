@@ -13,12 +13,6 @@ const NAV_LINKS = [
 
 const BRANDS = [
   {
-    name: 'Jixxii',
-    url: 'https://www.jixxii.com',
-    display: 'www.jixxii.com',
-    description: 'A digital platform delivering premium content and services to users worldwide through an elegant online experience.',
-  },
-  {
     name: 'Photobooth Kawaii',
     url: 'https://photobooth-kawaii.online',
     display: 'photobooth-kawaii.online',
